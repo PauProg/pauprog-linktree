@@ -1,0 +1,31 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="PauProg 😁">
+	<main>
+		<div class="w-screen h-screen flex justify-center items-center">
+			<div class="bg-[#505050] flex flex-col justify-center items-center rounded-3xl p-5 pb-0 m-3">
+				<div id="github" class="absolute flex justify-center items-center top-0 right-0 bg-[#c1c1c1] rounded-bl-full w-20 h-20 hover:bg-[#a1a1a1] transition">
+					<img src="/github-mark.svg" alt="github-icon" class="w-16 pb-4 pl-4">
+				</div>
+				<img src="/favicon.webp" alt="pauprog-profile-pic" class="w-2/3 rounded-full shadow-lg shadow-black/60 bg-white/20 mb-3">
+				<h1 class="mt-2 justify-start text-xl min-[350px]:text-3xl font-normal text-white">Pau Medina Vázquez</h1>
+				<p class="text-[#c5c5c5]  min-[350px]:ml-[-16.4rem] mb-5">17 y/o</p>
+				<div class="flex flex-col">
+					<button class="bg-[#292929] border-2 border-[#3e3e3e] rounded-lg text-white px-9 py-3 text-lg mb-2 hover:border-[#fff] cursor-pointer transition"><a href="https://portfolio.pauprog.tech/">My Portfolio</a></button>
+					<button class="bg-[#292929] border-2 border-[#3e3e3e] rounded-lg text-white px-9 py-3 text-lg mb-6 hover:border-[#fff] cursor-pointer transition"><a href="https://www.instagram.com/_pau.mvz/">My Instagram</a></button>
+				</div>
+				<p class="text-[#7D7D7D] text-sm mb-1">PauProg©</p>
+			</div>
+		</div>
+	</main>
+</Layout>
+
+<script>
+	const git = document.getElementById('github');
+
+	git.addEventListener('click', () => {
+		window.open('https://github.com/PauProg'); // Add your github link here
+	});
+</script>
